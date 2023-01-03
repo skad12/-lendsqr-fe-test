@@ -18,7 +18,7 @@ export default function Nav() {
             href="#"
             aria-label=""
             title=""
-            className="inline-flex items-center"
+            className="inline-flex items-center hidden md:block"
           >
             <svg
               className="w-4 h-4 text-blue-900"
@@ -43,7 +43,7 @@ export default function Nav() {
           <div className="flex items-center hidden  md:block  space-x-8 lg:flex">
           <div className="flex items-center justify-center">
     <div className="flex border-2 rounded">
-        <input type="text" className="px-4 py-2 w-96 h-7 text-xs" placeholder="Search for anything" />
+        <input type="text" className="px-4 py-2 w-96 h-7 text-xs md:min-w-full" placeholder="Search for anything" />
         <button className="flex items-center justify-center px-3 border-l bg-cyan-400">
             <svg className="w-5 h-6 text-gray-600 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">
@@ -81,12 +81,12 @@ export default function Nav() {
             </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden block">
             <button
               aria-label="Open Menu"
               title="Open Menu"
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-              onClick={() => setIsMenuOpen(true)}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                 <path

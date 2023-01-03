@@ -9,7 +9,7 @@ function Tables() {
         <>
      
 
-<section className="py-8 bg-blueGray-50">
+<section className="py-8 bg-blueGray-50 hidden md:block">
   <div className="  mx-auto">
     <div className="p-7 pb-12 pt-12  rounded-5xl">
      
