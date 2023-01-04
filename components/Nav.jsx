@@ -20,40 +20,21 @@ export default function Nav() {
             title=""
             className="inline-flex items-center hidden md:block"
           >
-            <svg
-              className="w-4 h-4 text-blue-900"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
+            
             <span className="ml-2  font-bold tracking-wide text-blue-900 ">
               Lendsqr
             </span>
           </a>
 
-          <div className="flex items-center hidden  md:block  space-x-8 lg:flex">
-          <div className="flex items-center justify-center">
-    <div className="flex border-2 rounded">
-        <input type="text" className="px-4 py-2 w-96 h-7 text-xs md:min-w-full" placeholder="Search for anything" />
-        <button className="flex items-center justify-center px-3 border-l bg-cyan-400">
-            <svg className="w-5 h-6 text-gray-600 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24">
-                <path
-                    d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
-            </svg>
-        </button>
-    </div>
+          <div class="relative rounded-md shadow-sm border w-96 ">
+  <input type="search" class="form-input py-2 px-3 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Search" />
+  <button type="submit" class="absolute inset-y-0 right-0 px-3 flex items-center bg-cyan-500 pointer-events-none hover:text-gray-700">
+    <svg class="h-5 w-5 " fill="currentColor" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+    </svg>
+  </button>
 </div>
-          </div>
+
 
 
           <div className="flex items-end hidden  lg:flex ">

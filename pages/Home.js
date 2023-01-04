@@ -30,15 +30,19 @@ const Home = () => {
             
 
             <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
-                <p className=" text-3xl text-blue-900 font-bold">Welcome!</p>
-                <p className=" text-sm font-light text-blue-900">Enter details to login </p>
+                
+                <div className=" text-3xl text-blue-900 font-bold">
+                    <span>Welcome!</span><br/>
+                <span className=" text-sm font-light text-blue-900">Enter details to login </span>
+                </div>
+                
                 <form className="flex flex-col pt-3 md:pt-4" >
                     <div className="flex flex-col pt-4">
-                        <input type="email" id="email" placeholder="Email" className=" text-sm shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
+                        <input type="email" id="email" placeholder="Email" className=" text-sm shadow appearance-none border rounded w-full py-2 px-3  mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
                     </div>
     
                     <div className="flex flex-col pt-4">
-                        <input type="password" id="password" placeholder="Password" className="text-sm shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
+                        <input type="password" id="password" placeholder="Password" className="text-sm shadow appearance-none border rounded w-full py-2 px-3  mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
                     </div>
 
                         <div className='pt-4'>

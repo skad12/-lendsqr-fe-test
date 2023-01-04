@@ -1,42 +1,35 @@
-import React from 'react'
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
-function Pagination() {
-    return ( 
+export default function PaginationControlled() {
+  const [page, setPage] = React.useState(1);
+  const handleChange = (event, value) => {
+    setPage(value);
+  };
 
-        <>
-        <div className='pt-4 px-10 font-light  flex text-sm  justify-between'>
-<div className='items-baseline flex space-x-2'>
-    <label  className='text-sm'><b>Showing</b></label>
-    <select name='number' className='bg-gray-200 rounded-lg h-7 '>
-        <option value=''>100</option>
-        <option value='one'>1</option>
-        <option value='two'>2</option>
-        <option value='three'>3</option>
-    </select>
-    <div>out of 100</div>
-    </div>
+  return (
+    <Stack spacing={2} >
+      <Typography className='flex justify-between px-10'>
 
-    <div className="space-x-5 flex text-xs  ">
-      <button className='bg-gray-200'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3  ">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-</svg>
-</button>
-  <button className="text-gray-400 hover:text-gray-800">1</button>
-  <button className="text-gray-400 hover:text-gray-800">2</button>
-  <button className='text-gray-400 hover:text-gray-800'>3</button>
-  <button className="btn btn-disabled">...</button>
-  <button className="text-gray-400 hover:text-gray-800">99</button>
-  <button className="text-gray-400 hover:text-gray-800">100</button>
-  <button className='bg-gray-200'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-</svg>
-</button>
-</div>
-
-</div>
         
-        </>
-     );
-}
+      <div className=" flex space-x-2 ">
+        <span className='pt-1'>Showing </span>
+  <select className="form-select block w-20  rounded-md bg-gray-300 py-2  text-center leading-5 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+    <option>100</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <span className='pt-1'>out of {page} </span>
+</div>
 
-export default Pagination;
+        
+        <Pagination count={100} page={page} onChange={handleChange} />
+        </Typography>
+      
+    </Stack>
+  );
+}
