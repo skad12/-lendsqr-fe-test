@@ -1,14 +1,13 @@
 import {React, useState} from 'react';
-
 import Dropdown from '../components/Dropdown';
-import SideNav from '../components/SideNav';
+import Hamburger from '../components/Hamburger';
 import Image from 'next/image';
 
 
 export default function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menu = <SideNav />
+
+  
 
   return (
     <div className="bg-white">
@@ -18,7 +17,7 @@ export default function Nav() {
             href="#"
             aria-label=""
             title=""
-            className=" items-center hidden md:block"
+            className=" items-center "
           >
             
             <span className="ml-2  font-bold tracking-wide text-blue-900 ">
@@ -26,8 +25,8 @@ export default function Nav() {
             </span>
           </a>
 
-          <div class="relative rounded-md shadow-sm border lg:w-96 md:w-80 w-60">
-  <input type="search" class="form-input py-2 px-3 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Search" />
+          <div class="relative rounded-md shadow-sm border w-96 ">
+  <input type="search" class="form-input py-2 px-3 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 bg-white" placeholder="Search" />
   <button type="submit" class="absolute inset-y-0 right-0 px-3 flex items-center bg-cyan-500 pointer-events-none hover:text-gray-700">
     <svg class="h-5 w-5 " fill="currentColor" viewBox="0 0 20 20">
       <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
@@ -37,7 +36,7 @@ export default function Nav() {
 
 
 
-          <div className=" items-end   lg:flex ">
+          <div className=" items-end flex hidden md:block">
             <div>
               <a
                 href=""
@@ -63,28 +62,7 @@ export default function Nav() {
           </div>
 
           <div className="md:hidden block ">
-            <button
-              aria-label="Open Menu"
-              title="Open Menu"
-              className="p-2  transition duration-200 rounded focus:outline-none focus:shadow-outline"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                />
-              </svg>
-            </button>
-            {isMenuOpen && menu}
+                <Hamburger />
           </div>
         </div>
       </div>

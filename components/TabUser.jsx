@@ -48,7 +48,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%' }} className='px-10 pt-10 mt-10 mx-2 py-10 bg-white '>
+    <Box sx={{ width: '100%' }} className='px-10 pt-10 mt-10  py-10 bg-white '>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }} >
       <Profile />
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" className='pt-10 capitalize '>

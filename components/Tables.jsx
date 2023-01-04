@@ -9,11 +9,11 @@ function Tables() {
         <>
      
 
-<section className="py-8 bg-blueGray-50 hidden md:block lg:px-16 md:px-8 px-4 " >
+<section className="py-8 bg-blueGray-50  lg:px-16 md:px-8 px-4  " >
   <div className="  mx-auto">
     <div className=" pb-12 pt-12  rounded-5xl">
      
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto ">
         <div className="inline-block min-w-full overflow-hidden ">
           <table className=" table-auto w-full bg-white">
             <thead>

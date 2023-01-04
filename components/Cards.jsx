@@ -5,7 +5,7 @@ function Cards() {
 
         <>
 
-        <div className=' pt-16 font-sans hidden md:block lg:px-16 md:px-8  '>
+        <div className=' pt-16 font-sans lg:px-16 md:px-8 px-6 '>
         <div className='flex justify-between space-x-8 '>
 <div className="card card-body w-64 h-46 border rounded-lg bg-white p-6 space-y-4 shadow-md ">
     <div className="card-title bg-pink-200 rounded-full w-8 h-8 ">
