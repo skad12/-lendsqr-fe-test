@@ -38,11 +38,11 @@ const Home = () => {
                 
                 <form className="flex flex-col pt-3 md:pt-4" >
                     <div className="flex flex-col pt-4">
-                        <input type="email" id="email" placeholder="Email" className=" text-sm shadow appearance-none border rounded w-full py-2 px-3  mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
+                        <input type="email" id="email" placeholder="Email" className=" text-sm shadow appearance-none bg-white border rounded w-full py-2 px-3  mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
                     </div>
     
                     <div className="flex flex-col pt-4">
-                        <input type="password" id="password" placeholder="Password" className="text-sm shadow appearance-none border rounded w-full py-2 px-3  mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
+                        <input type="password" id="password" placeholder="Password" className="text-sm shadow bg-white appearance-none border rounded w-full py-2 px-3  mt-1 leading-tight focus:outline-none focus:shadow-outline focus:ring-1 focus:ring-blue-400" />
                     </div>
 
                         <div className='pt-4'>
