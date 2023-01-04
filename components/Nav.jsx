@@ -18,7 +18,7 @@ export default function Nav() {
             href="#"
             aria-label=""
             title=""
-            className="inline-flex items-center hidden md:block"
+            className=" items-center hidden md:block"
           >
             
             <span className="ml-2  font-bold tracking-wide text-blue-900 ">
@@ -26,7 +26,7 @@ export default function Nav() {
             </span>
           </a>
 
-          <div class="relative rounded-md shadow-sm border w-96 ">
+          <div class="relative rounded-md shadow-sm border lg:w-96 md:w-80 w-60">
   <input type="search" class="form-input py-2 px-3 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Search" />
   <button type="submit" class="absolute inset-y-0 right-0 px-3 flex items-center bg-cyan-500 pointer-events-none hover:text-gray-700">
     <svg class="h-5 w-5 " fill="currentColor" viewBox="0 0 20 20">
@@ -37,7 +37,7 @@ export default function Nav() {
 
 
 
-          <div className="flex items-end hidden  lg:flex ">
+          <div className=" items-end   lg:flex ">
             <div>
               <a
                 href=""
@@ -62,11 +62,11 @@ export default function Nav() {
             </div>
           </div>
 
-          <div className="md:hidden block">
+          <div className="md:hidden block ">
             <button
               aria-label="Open Menu"
               title="Open Menu"
-              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+              className="p-2  transition duration-200 rounded focus:outline-none focus:shadow-outline"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">

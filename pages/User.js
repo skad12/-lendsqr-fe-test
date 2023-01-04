@@ -8,16 +8,15 @@ import TabUser from '../components/TabUser';
 const User = () => {
     return ( 
 
-        <div className="antialiased min-h-screen font-sans" >
+        <div className="antialiased min-h-max min-w-max font-sans" >
 
          <Nav />
           
-          <div className="flex h-screen">
-  <div className="w-64 h-full hidden md:block ">
-   
+          <div className="flex bg-gray-200">
+  <div className="min-h-wax hidden md:block ">
     <SideNav/>
   </div>
-  <div className="flex-1 bg-gray-100 ">
+  <div className="">
       
     <UserHeader />
     <TabUser />

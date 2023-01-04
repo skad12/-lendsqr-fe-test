@@ -10,8 +10,8 @@ export default function PaginationControlled() {
   };
 
   return (
-    <Stack spacing={2} >
-      <Typography className='flex justify-between px-10'>
+    <Stack spacing={2} className='hidden md:block'>
+      <Typography className='flex justify-between lg:px-16 md:px-8 px-4  '>
 
         
       <div className=" flex space-x-2 ">

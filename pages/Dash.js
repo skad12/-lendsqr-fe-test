@@ -8,19 +8,15 @@ import Pagination from '../components/Pagination';
 const Dash = () => {
     return ( 
 
-        <div className="antialiased" >
-
-         
-          <div className=''>
-            <Nav />
-            </div>
-         
+        <div className="antialiased min-w-max font-sans" >
+   
+            <Nav />   
           
-          <div className="flex h-screen">
-  <div className="w-64 h-full hidden md:block ">
+          <div className="flex bg-gray-200   "  >
+  <div className=" h-full hidden md:block  ">
     <SideNav/>
   </div>
-  <div className="flex-1 bg-gray-100 ">
+  <div className="">
     <Cards />
     <Tables />
     <Pagination />
